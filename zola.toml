@@ -22,4 +22,25 @@ style = "class"
 
 
 [extra]
-# Put all your custom variables here
+
+skin = "teal"
+show_selected_language_code_in_language_switcher = true
+email = "ZGF2aWRlLmFuZHJlb2xpQGljbG91ZC5jb20="
+quick_navigation_buttons = true
+copy_button = true
+
+menu = [
+    { name = "blog", url = "blog", trailing_slash = true },
+    { name = "tags", url = "tags", trailing_slash = true },
+    { name = "projects", url = "projects", trailing_slash = true },
+]
+
+socials = [
+    { name = "github", url = "https://github.com/davide-andreoli/", icon = "github" },
+    { name = "linkedin", url = "https://www.linkedin.com/in/davide-andreoli-140b35154/", icon = "linkedin" }
+]
+
+footer_menu = [
+    {url = "sitemap.xml", name = "sitemap", trailing_slash = false},
+]
+

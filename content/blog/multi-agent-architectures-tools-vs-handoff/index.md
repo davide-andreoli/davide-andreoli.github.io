@@ -1,9 +1,10 @@
 +++
 title = "Multi Agent Architectures - Agents as Tools vs Handoffs"
+description = "A deep dive into two common approaches for building multi-agent systems: agents as tools and agent handoffs, comparing their pros and cons in terms of architecture, user experience, and implementation complexity."
 date = 2026-02-27
+[taxonomies]
+tags = ["AI engineering", "multi-agent systems"]
 +++
-
-# Multi Agent Architectures - Agents as Tools vs Handoffs
 
 Multi-agent systems are rapidly becoming a dominant architectural pattern in applied AI. In these systems, multiple agents coordinate and cooperate to solve a task. While these systems gradually move from simple chatbots to complex task execution engines, architecture decisions directly impact their capabilities, performance, and user experience.
 
@@ -27,7 +28,7 @@ An agent can be equipped with any tool that can be useful to fulfill the user re
 3. If the answer is yes, the supervisor will call the agent with the required context and wait for feedback. The agent that is called by the supervisor obviously can have its own tools and use them to perform the necessary actions.
 4. When the supervisor receives the agent feedback it can decide whether to answer to user or repeat the process if more information or actions are needed.
 
-![Agent as tools](/blog/agent_as_tools.png "Agent as Tools")
+![Agent as tools](img/agent_as_tools.png "Agent as Tools")
 
 This approach is particularly effective when:
 
@@ -58,7 +59,7 @@ The process typically looks like this:
 4. If it does not, the agent performs a handoff to the appropriate agent.
 5. The receiving agent continues the interaction and provides the answer.
 
-![Agent handoffs](agent_handoff.png "Agent Handoffs")
+![Agent handoffs](img/agent_handoff.png "Agent Handoffs")
 
 In this architecture there is no central orchestrator that owns the conversation state, but the responsibility of managing the context and executing the task shifts dynamically between agents. This approach works particularly well when:
 
