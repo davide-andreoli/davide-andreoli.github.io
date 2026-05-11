@@ -1,6 +1,7 @@
 +++
 title = "ResuMate"
 description = "An AI-powered resume editing playground designed to explore agentic workflows and LLM integrations in the context of job applications."
+weight = 10
 
 [taxonomies]
 tags = ["AI engineering"]

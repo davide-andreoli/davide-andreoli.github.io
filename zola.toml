@@ -41,6 +41,7 @@ socials = [
 ]
 
 footer_menu = [
+    { name = "about", url = "about", trailing_slash = true },
     {url = "sitemap.xml", name = "sitemap", trailing_slash = false},
 ]
 
